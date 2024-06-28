@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+   
+    <title>MOTOS</title>
+    <!--Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<script src="../js/jquery.js"></script>
+<script src="../js/jquery.easing.1.3.js"></script>
+<script>
+$(document).ready(function(){
+    $("#aparecer-cartas").click(function(){
+        $("#aparecer").fadeIn(1000)
+    })
+    $("#aparecer-cartas").click(function(){
+        $("#aparecer").fadeIn(1000)
+    })
+    $("#aparecer-cartas").click(function(){
+        $("#aparecer-cartas").fadeOut(1000)
+    })
+    $("#desaparecer-cartas").click(function(){
+        $("#aparecer-cartas").fadeIn(1000)
+    })
+    $("#desaparecer-cartas").click(function(){
+        $("#desaparecer-cartas").fadeOut(1000)
+    })
+    $("#desaparecer-cartas").click(function(){
+        $("#aparecer").fadeOut(1000)
+    })
+
+     /*  barra navegacion */
+     $(document).ready(function () {
+        $("#li2").hover(
+function () {
+              $(this).stop(1).animate({
+                  left: "0px",
+                },500,"easeInSine")
+            },
+            function () {
+              $(this).animate({
+                  left: "-150px",
+                },1500,"easeOutBounce")
+            })
+      })
+})
+
+</script>
+
+<body>
+    <header>
+        <img src="../img/logo.jpg" alt="MOTO">
+        <h2>MOTOCICLETAS</h2>
+        <nav >
+            <ul id="li2">
+                <li><a href="index.html">Inicio</a> </li>
+                <li><a href="categorias.html">Categorias</a> </li>
+                <li><a href="contactanos.html">Contactanos</a> </li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <input id="aparecer-cartas" class="botoncarta" type="submit" value="mostrar cartas">
+    <input id="desaparecer-cartas" class="botoncarta" type="submit" value="esconder cartas">
+
+<div id="aparecer" class="contenedor-card">
+    <div class="cards">
+        <div class="card">
+            <div class="face front">
+                <img src="../img/husqvarna.jfif" alt="Motocicleta Enduro">
+                <h3>Motocicleta Enduro</h3>
+            </div>
+            <div class="face back">
+                <h4>Enduro</h4>
+                <p class="pmotos">Las motos enduro son motos obligatoriamente de una cilindrada mayor a 125 2 tiempos o 250 4 tiemposs
+                </p>
+                <div class="link">
+                    <a href="https://motoeuropa.com.co/husqvarna/enduro/">tienda</a>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="face front">
+                <img src="../img/Yamaha-nueva-R6-2017_0000_2017_1.jpg" alt="Motocicleta racing">
+                <h3>Motocicleta Racing</h3>
+            </div>
+            <div class="face back">
+                <h4>RACING</h4>
+                <p class="pmotos">Las motos racing, también llamadas “pisteras” son motocicletas de estilo deportivo y generalmente de
+                    medio o alto cilindraje, hechas para la velocidad y la máxima eficiencia en las distancias medias y
+                    largas</p>
+                <div class="link">
+                    <a href="https://www.incolmotos-yamaha.com.co/categoria/super-deportivas/">tienda</a>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="face front">
+                <img src="../img/naked.jfif" alt="Motocicleta Enduro">
+                <h3>Motocicleta Naked</h3>
+            </div>
+            <div class="face back">
+                <h4>Naked</h4>
+                <p class="pmotos">Generalmente las motos naked se construyen con un tanque más grande y más largo. Además, este tipo de
+                    motocicletas también tienen controles de pie más traseros para evitar que las estriberas raspen el
+                    pavimiento, especialmente durante las curvas.</p>
+                <div class="link">
+                    <a href="https://www.ktm.com/es-gt/models/naked-bike.html">tienda</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="carta4" class="card">
+        <div class="face front">
+            <img src="../img/touring.webp" alt="Motocicleta Enduro">
+            <h3>Motocicleta Touring</h3>
+        </div>
+        <div class="face back">
+            <h4>Touring</h4>
+            <p class="pmotos">Son motos diseñadas para viajes largos a una velocidad normal o elevada, en las cuales se puede viajar
+                cómodamente, pudiendo realizar un tipo de conducción similar a la sport.</p>
+            <div class="link">
+                <a href="https://cfmotocolombia.com/categorias-motos/multi-function-touring/">tienda</a>
+            </div>
+        </div>
+    </div>
+    </div>
+    </ul>
+</div>
+
+
+</body>
+<footer>
+    <div class="caja_icons">
+        <ion-icon class="iconos" name="logo-facebook">facebook</ion-icon>
+        <ion-icon class="iconos" name="logo-whatsapp">logo-whatsapp</ion-icon>
+    </div>
+
+
+
+</footer>
+
+</html>

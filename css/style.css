@@ -1,0 +1,436 @@
+/*reset de la pagina */
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+
+/*cuerpo de la pagina */
+body{
+
+    align-items: center;
+    justify-content: center;
+    
+    background:rgb(154, 115, 170);
+
+}
+
+
+/*Barra De Navegacion*/
+header{
+    width: 100%;
+    height: 15%;
+    background-color:rgb(255, 255, 255);
+    background-image: url(../img/cafe.jpeg);
+
+}
+header img{
+    width: 100px;
+    margin: 15px;
+    border-radius: 15px;
+    box-shadow: 5px 5px 6px rgba(58, 6, 126, 0.151);
+}
+header h1{
+    font-size: 40px;
+    color: #ffffff;
+    margin: -7% 0 0 20%;
+}
+.navbar ul{
+    margin: -4% 0 0 70%;
+}
+.navbar ul li{
+    display:flex;
+    padding: 0;
+    margin-left: 2%;
+    font-size: 20px;
+    
+}
+.navbar ul li a{
+    color: #fff;
+}
+
+/*Fin Barra De Navegacion*/
+
+
+
+/*Container index*/
+.info {
+    display: flex;
+    justify-content: center;
+    padding: 150px 0; 
+}
+
+.container{
+    background: #000;
+    color: #fff;
+    width: 70%;
+    text-align: center;
+    padding: 30px;
+}
+.container h2{
+    font-size: 30px;
+}
+.container p{
+    padding: 2%;
+    font-size: 20px;
+}
+.container img{
+    width: 40%;
+    padding: 20px;
+    transition: .3s;
+    border-radius: 20px;
+}
+.container img:hover{
+    width: 60%;
+
+}
+/*Container*/
+
+#MOTOCICLETA{
+    height: 170px ;
+    box-shadow: 5px 5px 6px rgb(255, 255, 255);
+
+   
+}
+
+h1{
+    color: rgb(255, 255, 255);
+    margin: 2% 0 20px 5%;
+
+}
+
+#parrafo1{
+    width: 550px;
+    margin-left: 30%;
+    text-align: justify;
+}
+#BIKE{
+    
+width: 350px;
+}
+#BIKE:hover{
+    width: 500px;
+}
+
+    
+/*cartas (categorias)*/
+.contenedor-card{
+    margin-bottom: 250px;
+}
+
+.cards{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    margin-bottom: 5%;
+    margin-top: 5%;
+    
+}
+
+.card{
+    position: relative;
+    width: 80%;
+   height: 200px;
+    margin-right: 25%;
+   margin-left:10%;
+
+}
+
+
+#carta4{
+    width: 27%;
+    margin-left: 37%;
+}
+     
+
+.card .face{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: .5s;
+}
+.card .front{
+    transform: perspective(600px) rotateY(0deg);
+    box-shadow: 0 5px 10px #000;
+}
+.card .front img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.card .front h3{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 45px;
+    line-height: 45px;
+    color: #fff;
+    background: rgba(0, 0, 0, .4);
+    text-align: center;
+}
+.card .back{
+    transform: perspective(600px) rotateY(180deg);
+    background: rgb(19, 20, 20);
+    padding: 15px;
+    color: #f3f3f3;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    box-shadow: 0 5px 10px #000;
+}
+.card .back .link{
+    border-top: 1px solid #f3f3f3;
+    height: 50px;
+    line-height: 50px;
+}
+.card .back .link a{
+    color: #f3f3f3;
+}
+.card .back h3{
+    font-size: 30px;
+    margin-top: 20px;
+    letter-spacing: 2px;
+}
+
+
+.card .back p{
+    letter-spacing: 1px;
+    font-size: 17px;
+}
+.card:hover .front{
+    transform: perspective(600px) rotateY(-180deg);
+}
+.card:hover .back{
+    transform: perspective(600px) rotateY(360deg);
+}
+
+.card1{
+    position: relative;
+    width: 35%;
+    height: 300px;
+    margin-right: 200%;
+   margin-left:32%;
+}
+.card1 .face{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: .5s;
+}
+.card1 .front{
+    transform: perspective(600px) rotateY(0deg);
+    box-shadow: 0 5px 10px #000;
+}
+.card1 .front img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.card1 .front h3{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 45px;
+    line-height: 45px;
+    color: #fff;
+    background: rgba(0, 0, 0, .4);
+    text-align: center;
+}
+.card1 .back{
+    transform: perspective(600px) rotateY(180deg);
+    background: rgb(19, 20, 20);
+    padding: 15px;
+    color: #f3f3f3;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    box-shadow: 0 5px 10px #000;
+}
+.card1 .back .link{
+    border-top: 1px solid #f3f3f3;
+    height: 50px;
+    line-height: 50px;
+}
+.card1 .back .link a{
+    color: #f3f3f3;
+}
+.card1 .back h3{
+    font-size: 30px;
+    margin-top: 20px;
+    letter-spacing: 2px;
+}
+
+
+.card1 .back p{
+    letter-spacing: 1px;
+    font-size: 17px;
+}
+.card1:hover .front{
+    transform: perspective(600px) rotateY(-180deg);
+}
+.card1:hover .back{
+    transform: perspective(600px) rotateY(360deg);
+}
+
+
+
+
+/*formulario (contactenos)*/
+ .formulario {
+    width: 70%;
+   margin-left: 15%;
+   margin-top: 5%;
+   margin-bottom: 5%;
+    padding: 5%;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    text-align: center;
+
+}
+
+.parrafo_mapa{
+    color: #f3f3f3;
+    text-transform: uppercase;
+}
+
+
+
+
+label {
+    display: block;
+    margin-top: 5%;
+    text-transform: uppercase;
+    color: #f3f3f3;
+}
+
+input[type="text"], input[type="email"], input[type="tel"], select {
+    width: 99%;
+    padding: 1.5%;
+    margin-top: 1%;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+
+input[type="checkbox"] {
+    margin-right: 0.5%;
+}
+
+button {
+    background-color: #f7f7f7;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 5%;
+}
+
+button:hover {
+    background-color: #ffffff;
+}
+.mapa{
+
+   
+     border-radius: 20px; 
+     width: 60%;
+}
+.enviar{
+    text-transform: uppercase;
+    padding: 3%;
+    width: 30%;
+    margin-left: 2%;
+    margin-top: 5%;
+    color: darkorchid;
+    border-radius: 20px;
+}
+
+/*pie de pagina*/
+
+footer{
+    background-color: #000;
+    height: 10%;
+    width: 100%;
+    bottom: 0;
+    padding: 10px;
+  }
+  .iconos{
+    height: 30px;
+    width: 40px;
+    text-align: center;
+    background-color: white;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    
+  }
+  .caja_icons{
+    display: flex;
+    justify-content: center;
+    gap:25px;
+  }
+    
+
+
+
+/* jquery barra */
+  
+    #li2 {
+      width: 180px;
+      background-color: rgb(83, 132, 143);
+      
+      position: absolute;
+      left: -150px;
+      border-radius: 20px;
+
+    }
+
+    #li2 li {
+      width: 120px;
+      height: 150px;
+      font-size: 25px;
+      
+    }
+  
+
+
+/* desaparecer y aparecer cartas */
+
+    #pmotos{
+        display: none;
+    }
+
+    #aparecer{
+        display: none;
+    }
+
+
+    .botoncarta{
+       margin-left: 20%;
+        padding: 10px;
+        border-radius: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: rgb(210, 250, 252);
+        color: black;
+    }
+
+
+
+
+
+    #todohtml{
+        display: none;
+    }
+
+    
